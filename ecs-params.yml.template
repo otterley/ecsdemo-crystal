@@ -15,3 +15,8 @@ run_params:
       security_groups:
         - "$security_group"
       assign_public_ip: DISABLED
+  service_discovery:
+    container_name: ecsdemo-crystal
+    service_discovery_service:
+        name: ecsdemo-crystal-$C9_USER
+        description: string
